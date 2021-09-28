@@ -1,0 +1,10 @@
+{{page-title "Characters"}}
+<ul>
+  {{#each model as |character|}}
+    <li>
+      {{#character-list-entry character=character}}
+      {{/character-list-entry}}
+    </li>
+  {{/each}}
+</ul>
+{{outlet}}

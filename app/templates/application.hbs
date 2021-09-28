@@ -1,7 +1,14 @@
 {{page-title "Playground"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<h1>Fun Start Wars Movie Details!</h1> <br>
 
-{{outlet}}
+<nav>
+  {{#link-to 'movies'}}Movies{{/link-to}}
+  {{#link-to 'characters'}}Characters{{/link-to}}
+</nav>
+
+<p>This is a Star Wars movie details site</p>
+
+<div class="main-content">
+  {{outlet}}
+</div>
