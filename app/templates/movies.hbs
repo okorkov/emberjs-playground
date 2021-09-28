@@ -2,8 +2,8 @@
 <ul>
   {{#each model as |movie|}}
     <li>
-      {{#movie-list-entry movie=movie}}
-      {{/movie-list-entry }}
+      <MovieListEntry @movie={{movie}}>
+      </MovieListEntry>
     </li>
   {{/each}}
 </ul>

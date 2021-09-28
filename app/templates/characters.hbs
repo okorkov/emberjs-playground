@@ -2,8 +2,8 @@
 <ul>
   {{#each model as |character|}}
     <li>
-      {{#character-list-entry character=character}}
-      {{/character-list-entry}}
+      <CharacterListEntry @character={{character}}>
+      </CharacterListEntry>
     </li>
   {{/each}}
 </ul>

@@ -7,6 +7,18 @@ export default function () {
     return schema.characters.all();
   });
 
+  this.get('/movies/:id', (schema, request) => {
+    let id = request.params.id;
+    console.log(schema.movies.find(id));
+    return schema.movies.find(id);
+  })
+
+  this.get('/characters/:id', (schema, request) => {
+    let id = request.params.id;
+    console.log(schema.characters.find(id));
+    return schema.characters.find(id);
+  })
+
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
